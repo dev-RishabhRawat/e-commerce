@@ -5,13 +5,17 @@
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
+
 #banner {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url("../images/green-ring.jpg") no-repeat;
   padding-bottom: 100px;
   background-size: 100% 100%;
   height: 1000px;
+  overflow: hidden;
 }
+
 .logo {
   width: 170px;
   position: absolute;
@@ -142,9 +146,16 @@ nav ul li a {
 .title-text h1{
     font-size: 50px;
 }
+#details{
+  width: 100%;
+  padding:70px;
+  background: #efefef; 
+}
 
 div.product_container {
-  width: 100vw;
+  padding:70px ;
+  
+  width: 100vw;                                           
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -154,6 +165,7 @@ div.product_container {
 div.product_container .product-card {
   width: 400px;
   height: 450px;
+ margin: 20px;
   overflow: hidden;
   text-align: center;
   background: rgba(0, 0, 0, 0.8);
@@ -167,9 +179,13 @@ div.product_container .product-card img {
 div.product_container .product-card h2,h3 {
   color: #fff;
 }
-div.product_container .product-card a {
+div.product_container .product-card button {
   color: #fff;
   text-decoration: none;
+  background: transparent;
+  padding: 5px 8px;
+  border: 2px solid #fff;
+  cursor: pointer;
 }
 #bracelete{
      width: 150px;
@@ -186,6 +202,17 @@ background-color: #009688;
 #detailedPage {
   position: relative;
   margin-top: -10px;
+}
+#detailedPage .fa-arrow-alt-circle-left{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  transition: all ease 1s;
 }
 #detailedPage div {
    
@@ -216,6 +243,7 @@ background-color: #009688;
   width: 500px;
   line-height: 25px;
 }
+
 /*--feature--*/
 #feature {
   width: 100vw;
@@ -300,7 +328,8 @@ border:1px solid #009688;
 .feature-text p{
   padding: 0 20px;
   text-align: initial;
-} */
+} 
+ */
 @media screen and (max-width:770px){
 
   .title-text h1{
@@ -418,7 +447,34 @@ padding: 70px;
   border-radius: 5px;
   box-shadow: 0 10px 20px 3px #00968814;
   cursor: pointer;
+  transition: transform .5s;
 }
 .testimonial-col p{
   font-size: 14px;
+}
+.user{
+  display: flex;
+  align-items:  center;
+  margin: 20px 0;
+}
+.user img{
+  width: 40px;
+  margin-right: 20px;
+  border-radius: 3px;
+}
+.user-info .fa{
+margin-left: 10px;
+color: #27c0ff;
+font-size:20px;
+}
+.user-info small{
+  color:#009688;
+}
+.testimonial-col:hover{
+  transform: translateY(-7px);
+}
+@media screen and (max-width: 770px){
+  .testimonial-col{
+    flex-basis:100%; 
+  }
 }

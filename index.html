@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-  <title>jwellery websitet</title>
+  <title>jewellery website</title>
 
   <!-- font awesome cdn  -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -19,6 +19,9 @@
 </head>
 
 <body>
+
+
+
 
 
 
@@ -57,16 +60,56 @@
 
 
   <!-- all products details here -->
-  <div class="product_container">
 
-    <div class="product-card" id="product-container">
-      <img src="./images/bracelete.jpeg" alt="bracelete" />
-      <h2>Bracelete</h2>
-      <h3>💲200/-</h3>
-      <button id=bracelete>VISIT PRODUCT</button>
+  <section id="details">
+    <div class="title-text">
+      <p>PRODUCTS</p>
+      <h1>ALL PRODUCTS HERE</h1>
     </div>
-  </div>
+    <div class="product_container">
 
+
+      <div class="product-card" >
+        <img src="./images/bracelete.jpeg" alt="bracelete" />
+        <h2>Bracelete</h2>
+        <h3>💲300/-</h3>
+        <button onclick="showDescription()">VISIT PRODUCT</button>
+      </div>
+      <div class="product-card" >
+        <img src="./images/necklace-2.jpg" alt="necklace" />
+        <h2>NecklaceSet</h2>
+        <h3>💲800/-</h3>
+        <button onclick="showDescription()">VISIT PRODUCT</button>
+      </div>
+
+      <div class="product-card" >
+        <img src="./images/nose-ring.jpeg" alt="nose-ring" />
+        <h2>NoseRing</h2>
+        <h3>💲100/-</h3>
+        <button onclick="showDescription()">VISIT PRODUCT</button>
+      </div>
+
+      <div class="product-card" >
+        <img src="./images/earrings.jpg" alt="earrings" />
+        <h2>EARRINGS</h2>
+        <h3>💲400/-</h3>
+        <button onclick="showDescription()">VISIT PRODUCT</button>
+      </div>
+      <div class="product-card" >
+        <img src="./images/earrings-2-img.jpg" alt="earrings" />
+        <h2>Golden Earrings</h2>
+        <h3>💲600/-</h3>
+        <button onclick="showDescription()">VISIT PRODUCT</button>
+      </div>
+
+      <div class="product-card" >
+        <img src="./images/long-nacklace.jpg" alt="long necklace" />
+        <h2>Long Necklace</h2>
+        <h3>💲600/-</h3>
+        <button onclick="showDescription()" >VISIT PRODUCT</button>
+      </div>
+    </div>
+  </section>
   <section id="detailedPage">
     <i class="far fa-arrow-alt-circle-left"></i>
   </section>
@@ -80,7 +123,7 @@
       <div class="feature">
         <h1>Experienced Staff</h1>
         <div class="feature-desc">
-       
+
           <div class="feature-text">
             <span>
               <i class="fa fa-id-badge" aria-hidden="true"></i>
@@ -92,7 +135,7 @@
         </div>
         <h1>Pre Booking Online</h1>
         <div class="feature-desc">
-         
+
           <div class="feature-text">
             <span>
               <i class="fa fa-check-square-o"></i>
@@ -104,7 +147,7 @@
         </div>
         <h1>Affordable cost</h1>
         <div class="feature-desc">
-         
+
           <div class="feature-text">
             <span>
               <i class="fa fa-inr"></i>
@@ -192,7 +235,11 @@
     <div class="testimonial-row">
       <div class="testimonial-col">
         <div class="user">
-          <img src="">
+          <img src="./images/CLIENT-3.jpeg">
+          <div class="user-info">
+            <h4>KEN NORMQN <i class="fa fa-twitter"></i></h4>
+            <small>@keynorman</small>
+          </div>
         </div>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, ipsum, adipisci nemo vel delectus, magnam quam
@@ -200,12 +247,26 @@
         </p>
       </div>
       <div class="testimonial-col">
+        <div class="user">
+          <img src="./images/client-2.png">
+          <div class="user-info">
+            <h4>LIARA KARIAN<i class="fa fa-twitter"></i></h4>
+            <small>@liarakarian</small>
+          </div>
+        </div>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, ipsum, adipisci nemo vel delectus, magnam quam
           dolorum quisquam doloribus odit qui ratione laborum illum quibusdam natus? Deleniti optio natus aliquid!
         </p>
       </div>
       <div class="testimonial-col">
+        <div class="user">
+          <img src="./images/CLIENT-4.jpeg">
+          <div class="user-info">
+            <h4>SAM JASSON<i class="fa fa-twitter"></i></h4>
+            <small>@samjasson</small>
+          </div>
+        </div>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, ipsum, adipisci nemo vel delectus, magnam quam
           dolorum quisquam doloribus odit qui ratione laborum illum quibusdam natus? Deleniti optio natus aliquid!
@@ -214,10 +275,6 @@
     </div>
 
   </section>
-
-
-
-
   <script src="./script.js"></script>
 </body>
 
