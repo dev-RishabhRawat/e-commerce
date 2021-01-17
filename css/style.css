@@ -179,13 +179,14 @@ div.product_container .product-card img {
 div.product_container .product-card h2,h3 {
   color: #fff;
 }
-div.product_container .product-card button {
+div.product_container .product-card button ,.buy-btn {
   color: #fff;
   text-decoration: none;
   background: transparent;
   padding: 5px 8px;
   border: 2px solid #fff;
   cursor: pointer;
+  margin: 5px 0;
 }
 #bracelete{
      width: 150px;

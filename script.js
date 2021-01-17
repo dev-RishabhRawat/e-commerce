@@ -18,6 +18,9 @@ const showDescription = (e)=>{
   let img = document.createElement("img");
   let h2 = document.createElement("h2");
   let p = document.createElement("p");
+  let button = document.createElement('button');
+  button.innerHTML = 'Buy Now'
+  button.classList.add('buy-btn');
   img.setAttribute("src", `${imgSrc}`);
   img.classList.add('img');
   h2.classList.add('h2');
@@ -26,6 +29,7 @@ const showDescription = (e)=>{
   p.innerText = `If you are a solitaire lover there is the Frele ${description} and Vanilla ${description} for those who prefer more traditional Kadas, there is the openable bracelet – Stars and Stripes ${description} and the Kalamkari Diamond Kada. For the minimalists we have a series of delicate bracelets like the New Leaf ${description}, charm bracelets like The Forest Fairy ${description},  Friends Forever ${description}, Joy ${description}-cum-Pendant that is open to customization too.There are beautiful, pretty, very feminine and dainty designer diamond bangles on Candere, the styling suited to match your personalities or make your selection easier based on your moods or the likes & tastes of the one you are going to gift them to.`;
   div.appendChild(img);
   div.appendChild(h2);
+  div.appendChild(button);
   div.appendChild(p);
   detailedPage.appendChild(div);
   banner.classList.add("toggle");
